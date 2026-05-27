@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle - OOP-Quest</title>
+    <link rel="stylesheet" href="css/style.css?v=3d27">
+</head>
+<body data-page="battle">
+<main class="battle-screen">
+    <header class="topbar">
+        <a href="index.html" class="nav-link">Menu</a>
+        <div>
+            <span>Stage <strong id="stageNumber">1</strong></span>
+            <span>Score <strong id="score">0</strong></span>
+        </div>
+    </header>
+
+    <section class="battle-scene-panel" aria-label="Arena battle 3D">
+        <section class="status-grid scene-status">
+            <article class="status-card">
+                <span>Pemain</span>
+                <h2 id="playerName">Scholar</h2>
+                <div class="hp-row">
+                    <div class="hp-bar"><span id="playerHpBar"></span></div>
+                    <strong id="playerHp">100/100</strong>
+                </div>
+            </article>
+            <article class="status-card">
+                <span>Musuh</span>
+                <h2 id="monsterName">Compile Error</h2>
+                <div class="hp-row">
+                    <div class="hp-bar enemy"><span id="monsterHpBar"></span></div>
+                    <strong id="monsterHp">50/50</strong>
+                </div>
+            </article>
+        </section>
+        <div id="battle3dScene" class="battle-3d-scene">
+            <div class="scene-fallback">
+                <div class="css-arena">
+                    <div class="css-character player-css">
+                        <span class="hat-css"></span>
+                        <span class="head-css"></span>
+                        <span class="body-css"></span>
+                        <span class="wand-css"></span>
+                    </div>
+                    <div class="css-character monster-css">
+                        <span class="horn-css left"></span>
+                        <span class="horn-css right"></span>
+                        <span class="head-css"></span>
+                        <span class="body-css"></span>
+                        <span class="eye-css left"></span>
+                        <span class="eye-css right"></span>
+                    </div>
+                </div>
+                <span class="scene-loading-text">Memuat arena 3D...</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="battle-layout">
+        <article class="question-panel">
+            <p class="message" id="message">Battle dimulai.</p>
+            <h2 id="questionText">Memuat soal...</h2>
+            <form id="answerForm" class="options"></form>
+            <button id="submitAnswerBtn" class="primary-btn" type="button">Submit Jawaban</button>
+        </article>
+
+        <aside class="inventory-panel">
+            <h2>Inventory</h2>
+            <p id="itemCount">HealingPotion x0</p>
+            <button id="usePotionBtn" class="secondary-btn" type="button">Gunakan HealingPotion</button>
+        </aside>
+    </section>
+</main>
+<script type="module" src="js/battle3d.js?v=3d33"></script>
+<script src="js/script.js?v=3d27"></script>
+</body>
+</html>

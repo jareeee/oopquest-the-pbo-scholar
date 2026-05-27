@@ -1,0 +1,8 @@
+Model Information:
+* title:	Minecraft Player Wide (Rigged with outer layer)
+* source:	https://sketchfab.com/3d-models/minecraft-player-wide-rigged-with-outer-layer-bd4b6d0b14834d34be0814d5303c99d9
+* author:	DunneWortel (https://sketchfab.com/dunnewortel)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

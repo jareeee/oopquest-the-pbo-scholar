@@ -1,0 +1,11 @@
+Model Information:
+* title:	Gengar (Pokemon)
+* source:	https://sketchfab.com/3d-models/gengar-pokemon-b24c17c4cdb74b15a15fab7363c2b5bb
+* author:	code_6122 (https://sketchfab.com/code_6122)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Gengar (Pokemon)" (https://sketchfab.com/3d-models/gengar-pokemon-b24c17c4cdb74b15a15fab7363c2b5bb) by code_6122 (https://sketchfab.com/code_6122) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

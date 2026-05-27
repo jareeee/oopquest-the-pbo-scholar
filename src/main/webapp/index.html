@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP-Quest: The PBO Scholar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="menu">
+<main class="menu-screen">
+    <section class="brand-panel">
+        <p class="eyebrow">Turn-Based PBO RPG</p>
+        <h1>OOP-Quest: The PBO Scholar</h1>
+        <p class="lead">Jawab kuis PBO, kalahkan error tiap stage, dan simpan score terbaikmu.</p>
+    </section>
+
+    <section class="menu-panel">
+        <label for="playerName">Nama Pemain</label>
+        <input id="playerName" type="text" maxlength="30" value="Scholar">
+
+        <button id="startBtn" class="primary-btn">Start Game</button>
+        <button id="guideBtn" class="secondary-btn">Panduan</button>
+        <a class="secondary-link" href="highscore.html">High Score</a>
+
+        <div id="guideBox" class="guide-box hidden">
+            <h2>Panduan Singkat</h2>
+            <p>Pilih jawaban kuis. Jawaban benar membuat pemain menyerang dan menambah score. Jawaban salah memberi giliran serangan ke musuh.</p>
+            <p>Gunakan HealingPotion saat HP menipis. Game selesai saat semua stage selesai atau HP pemain habis.</p>
+        </div>
+    </section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
