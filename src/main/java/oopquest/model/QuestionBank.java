@@ -34,6 +34,24 @@ public class QuestionBank {
         return daftarKuis.get(random.nextInt(daftarKuis.size()));
     }
 
+    public Kuis ambilSoalAcakSelain(List<Kuis> kuisYangDikecualikan) {
+        if (daftarKuis.isEmpty()) {
+            loadQuestions();
+        }
+        if (daftarKuis.isEmpty()) {
+            throw new IllegalStateException("Bank soal masih kosong.");
+        }
+
+        List<Kuis> kandidat = new ArrayList<>(daftarKuis);
+        if (kuisYangDikecualikan != null) {
+            kandidat.removeAll(kuisYangDikecualikan);
+        }
+        if (kandidat.isEmpty()) {
+            return null;
+        }
+        return kandidat.get(random.nextInt(kandidat.size()));
+    }
+
     public void tambahSoal(Kuis kuis) {
         daftarKuis.add(kuis);
     }

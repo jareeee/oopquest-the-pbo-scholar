@@ -5,22 +5,28 @@ import oopquest.model.Monster;
 import oopquest.model.Pemain;
 import oopquest.model.QuestionBank;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BattleSystem {
     private Pemain player;
     private Monster enemy;
     private final QuestionBank questionBank;
+    private final List<Kuis> soalYangSudahMuncul;
     private Kuis currentQuestion;
     private String lastMessage;
 
     public BattleSystem(QuestionBank questionBank) {
         this.questionBank = questionBank;
+        this.soalYangSudahMuncul = new ArrayList<>();
         this.lastMessage = "Battle dimulai.";
     }
 
     public void mulaiBattle(Pemain player, Monster enemy) {
         this.player = player;
         this.enemy = enemy;
-        this.currentQuestion = questionBank.ambilSoalAcak();
+        this.soalYangSudahMuncul.clear();
+        this.currentQuestion = ambilSoalBerikutnya();
         this.lastMessage = "Stage dimulai. Lawan: " + enemy.getNama() + ".";
     }
 
@@ -40,7 +46,7 @@ public class BattleSystem {
         }
 
         if (cekPemenang() == null) {
-            currentQuestion = questionBank.ambilSoalAcak();
+            currentQuestion = ambilSoalBerikutnya();
         }
         return benar;
     }
@@ -76,5 +82,15 @@ public class BattleSystem {
 
     public String getLastMessage() {
         return lastMessage;
+    }
+
+    private Kuis ambilSoalBerikutnya() {
+        Kuis kuis = questionBank.ambilSoalAcakSelain(soalYangSudahMuncul);
+        if (kuis == null) {
+            soalYangSudahMuncul.clear();
+            kuis = questionBank.ambilSoalAcak();
+        }
+        soalYangSudahMuncul.add(kuis);
+        return kuis;
     }
 }
