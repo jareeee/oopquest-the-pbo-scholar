@@ -37,6 +37,20 @@ Project ini sudah menyertakan JDK 25 LTS portable dan Maven portable di folder `
 
 Biarkan terminal tetap terbuka selama aplikasi digunakan.
 
+## Cara Menjalankan di NetBeans
+
+1. Pastikan JDK 25 sudah terpasang dan terdaftar di NetBeans lewat `Tools > Java Platforms`.
+2. Buka NetBeans.
+3. Pilih `File > Open Project`, lalu pilih folder project ini.
+4. Klik kanan project, pilih `Run`.
+5. Setelah Jetty selesai start, buka browser:
+
+   ```text
+   http://localhost:8080/oopquest/
+   ```
+
+Project ini sudah menyertakan `nbactions.xml`, jadi tombol `Run` di NetBeans akan menjalankan Jetty otomatis dengan context path `/oopquest`.
+
 ## Build WAR
 
 Jika ingin membuat file WAR untuk dideploy ke Tomcat:

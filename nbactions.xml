@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>run</actionName>
+        <goals>
+            <goal>org.eclipse.jetty.ee10:jetty-ee10-maven-plugin:12.0.15:run</goal>
+        </goals>
+        <properties>
+            <maven.compiler.release>23</maven.compiler.release>
+            <maven.repo.local>.tools/m2/repository</maven.repo.local>
+        </properties>
+    </action>
+</actions>
